@@ -9,12 +9,15 @@ body{
     background-color: white;
     position: absolute;
 }
-
+.contact{
+  padding: 1px;
+  
+}
 
 /*------*/
 @mixin border($color: #ccc, $hover: black, $width: 2px, $vertical: top, $horizontal: left, $duration: 0.25s) {
   box-shadow: inset 0 0 0 $width $color;
-  color: $color;
+  //color: $color;
   transition: color $duration $duration/3;
   position: relative;
   
@@ -46,7 +49,7 @@ body{
   }
   
   &:hover {
-    color: $hover;
+    //color: $hover;
     
     &::before,
     &::after {
@@ -63,7 +66,7 @@ body{
 }
 
 .maindiv {
-  @include border(#fd9e9e, #9ceefdc9, 4px, bottom, right);
+  @include border(#fd9e9e, #d0f6fdda, 4px, bottom, right);
 }
 
 //=== Button styling, semi-ignore
